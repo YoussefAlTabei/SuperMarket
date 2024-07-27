@@ -14,7 +14,7 @@ This is a simple supermarket application that allows employees and managers to p
   - View basic statistics: most sold item of each month, profits, most profitable item and month, etc.
 
 ## Configuration
-To run the app please first set-up a MySQL server with the attached database backup and if you change the connection string edit 
+To run the app please first set-up a MySQL server with the attached database and if you change the connection string edit 
 it in the app.config file
 the default user is localhost, db name = market , uid root and pw = dataBasePW
 ```xml
