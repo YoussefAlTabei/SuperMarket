@@ -1,0 +1,26 @@
+# Supermarket Application
+
+This is a simple supermarket application that allows employees and managers to perform various tasks related to sales, stock management, and employee management.
+
+## Features
+
+- **Login System:** Simple login that allows access as an employee or manager.
+- **Database Connection:** Connects to a MySQL server.
+- **Sales:** Logs items using barcodes, displays receipts, and saves them as .txt files.
+- **Manager Interface:**
+  - View and delete previous receipts using joint databases.
+  - View, add, or remove employees and adjust their salaries.
+  - Manage stock: view, edit quantities, and prices.
+  - View basic statistics: most sold item of each month, profits, most profitable item and month, etc.
+
+## Configuration
+Too run the app please first set0up a MySQL server with the attached database backup and if you change the connection string edit 
+it in the app.config file
+the default user is localhost, db name = market , uid root and pw = dataBasePW
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <connectionStrings>
+        <add name="db" connectionString="server=localhost;database=market;uid=root;password=dataBasePW;" /> 
+    </connectionStrings>
+</configuration>
