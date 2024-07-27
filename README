@@ -17,6 +17,10 @@ This is a simple supermarket application that allows employees and managers to p
 To run the app please first set-up a MySQL server with the attached database and if you change the connection string edit 
 it in the app.config file
 the default user is localhost, db name = market , uid root and pw = dataBasePW
+
+Also set the path you want the receipt.txt file to be save in
+
+DataBase:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
@@ -24,3 +28,8 @@ the default user is localhost, db name = market , uid root and pw = dataBasePW
         <add name="db" connectionString="server=localhost;database=market;uid=root;password=dataBasePW;" /> 
     </connectionStrings>
 </configuration>
+
+Path:
+	<appSettings>
+		<add key="ReceiptPath" value="C:\MyFolder\Programming\receipt.txt" />
+	</appSettings>
